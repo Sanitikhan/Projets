@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B1 ESGI - Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1 id="titre">Projects</h1>
     <p>Je suis disponible à l'url : http://127.0.0.1:5500/Projects/index.html </p>  
     
+    <form action="" method="get">
+        Premier nombre <input type="number" name="input1" id="input1"/> <br/>
+        Deuxième nombre <input type="number" name="input2" id="input2"/> <br/> <br/>
+
+        <select name="select" id="select">
+            <option value="add">Additionner</option>
+            <option value="sus">Soustraire</option>
+            <option value="mul">Multiplier</option>
+            <option value="div">Diviser</option>
+        </select>
+
+        <button type="submit">Effectuer le calcul</button> <br/>
+
+        <p>Résultat :</p>
+        <span id="result"></span>
+    </form>
+
     <script src="index.js"></script>
 </body>
 </html>
